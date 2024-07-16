@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/lerolero/mocktb.lerolero.com.ec
+    - /bin/cp -R . $DEPLOYPATH
