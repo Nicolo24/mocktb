@@ -2,4 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/lerolero/mocktb.lerolero.com.ec
-    - /bin/cp -R . $DEPLOYPATH
+    #clear the deploy path
+    - rm -rf $DEPLOYPATH/*
+    #copy the files to the deploy path
+    - /bin/cp -R * $DEPLOYPATH
